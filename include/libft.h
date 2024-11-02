@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: greus-ro <greus-ro@student.42barcel>       +#+  +:+       +#+        */
+/*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 20:37:22 by greus-ro          #+#    #+#             */
-/*   Updated: 2024/11/01 19:22:24 by greus-ro         ###   ########.fr       */
+/*   Updated: 2024/11/02 19:09:44 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 void	*ft_ptr_free(void *ptr);
 char	*ft_ptr_new_char_buffer(size_t size);
-void	ft_ptr_free_double_ptr(char **ptr);
+void	*ft_ptr_free_dchar_ptr(char **ptr);
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);

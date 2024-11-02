@@ -6,7 +6,7 @@
 /*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 12:46:11 by greus-ro          #+#    #+#             */
-/*   Updated: 2024/08/26 22:20:59 by gabriel          ###   ########.fr       */
+/*   Updated: 2024/11/02 19:10:24 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_ptr_new_char_buffer(size_t size)
 	return (buffer);
 }
 
-void	ft_ptr_free_double_ptr(char **ptr)
+void	*ft_ptr_free_dchar_ptr(char **ptr)
 {
 	size_t	i;
 
@@ -45,4 +45,5 @@ void	ft_ptr_free_double_ptr(char **ptr)
 		free (ptr);
 		ptr = NULL;
 	}
+	return (NULL);
 }
