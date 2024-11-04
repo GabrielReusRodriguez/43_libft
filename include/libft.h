@@ -6,7 +6,7 @@
 /*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 20:37:22 by greus-ro          #+#    #+#             */
-/*   Updated: 2024/11/02 19:09:44 by gabriel          ###   ########.fr       */
+/*   Updated: 2024/11/04 20:10:01 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,34 @@
 # include <stddef.h>
 # include <stdbool.h>
 
+/*
+	Errors
+*/
+void	ft_error_error(const char *msg);
+void	ft_error_warning(const char *msg);
+void	ft_error_erno(void);
+
+/*
+	Pointers
+*/
 void	*ft_ptr_free(void *ptr);
 char	*ft_ptr_new_char_buffer(size_t size);
 void	*ft_ptr_free_dchar_ptr(char **ptr);
 
+/*
+	Memory
+*/
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
+void	*ft_memcpy(void	*dest, const void *src, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_memset(void	*s, int c, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 
+/*
+	Data types
+*/
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
@@ -31,6 +52,9 @@ int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isupper(int c);
 
+/*
+	Conversions
+*/
 int		ft_atoi(const char *nbr);
 long	ft_atol(const char *nbr);
 char	*ft_itoa(int n);
@@ -38,12 +62,9 @@ char	*ft_utoa(unsigned int n);
 char	*ft_dtoh(unsigned long u_number, unsigned int up_case);
 char	*ft_htoa(unsigned long long num, bool upcase);
 
-void	*ft_memcpy(void	*dest, const void *src, size_t n);
-void	*ft_memchr(const void *s, int c, size_t n);
-int		ft_memcmp(const void *s1, const void *s2, size_t n);
-void	*ft_memset(void	*s, int c, size_t n);
-void	*ft_memmove(void *dest, const void *src, size_t n);
-
+/*
+	Prints
+*/
 int		ft_iputchar_fd(char c, int fd);
 int		ft_iputstr_fd(char *s, int fd);
 int		ft_iputendl_fd(char *s, int fd);
@@ -54,8 +75,10 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
+/*
+	Text functions
+*/
 char	**ft_split(char const *s, char c);
-
 char	*ft_strdup(const char *s);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strjoin(char const *s1, char const *s2);

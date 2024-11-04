@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: greus-ro <greus-ro@student.42barcel>       +#+  +:+       +#+         #
+#    By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/04 01:34:53 by greus-ro          #+#    #+#              #
-#    Updated: 2024/11/01 19:32:31 by greus-ro         ###   ########.fr        #
+#    Updated: 2024/11/04 20:14:50 by gabriel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,6 +60,7 @@ SRC			=	ft_atoi.c			\
 				ft_bzero.c			\
 				ft_calloc.c			\
 				ft_dtoh.c			\
+				ft_error.c			\
 				ft_htoa.c			\
 				ft_iputchar_fd.c	\
 				ft_iputendl_fd.c	\
@@ -162,4 +163,4 @@ re: fclean all
 # Phony
 ################################################################################
 
-.PHONY= all clean fclean re
+.PHONY: all clean fclean re
