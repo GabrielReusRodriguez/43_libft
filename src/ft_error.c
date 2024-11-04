@@ -6,7 +6,7 @@
 /*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:10:18 by gabriel           #+#    #+#             */
-/*   Updated: 2024/11/04 20:19:57 by gabriel          ###   ########.fr       */
+/*   Updated: 2024/11/04 23:12:28 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,10 @@ void	ft_err_warning(const char *msg)
 	
 }
 
-void	ft_err_errno(void)
+void	ft_err_errno(const char *msg)
 {
-	perror("Error: ");
+	if (msg == NULL)
+		perror("Error: ");
+	else
+		perror(msg);
 }
