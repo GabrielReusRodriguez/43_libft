@@ -6,7 +6,7 @@
 /*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 20:37:22 by greus-ro          #+#    #+#             */
-/*   Updated: 2024/11/04 20:10:01 by gabriel          ###   ########.fr       */
+/*   Updated: 2024/11/04 20:20:05 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 /*
 	Errors
 */
-void	ft_error_error(const char *msg);
-void	ft_error_warning(const char *msg);
-void	ft_error_erno(void);
+void	ft_err_error(const char *msg);
+void	ft_err_warning(const char *msg);
+void	ft_err_errno(void);
 
 /*
 	Pointers
